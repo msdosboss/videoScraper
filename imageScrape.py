@@ -1,10 +1,8 @@
 import requests
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
-import wget
 import base64
 from io import BytesIO
 from PIL import Image
@@ -110,22 +108,3 @@ for x in range(80):
 
 browser.quit()
 
-
-
-
-
-
-
-"""r = requests.get('https://mcloud.bz/e/8z39qv?t=4xjQAf0vBFcOzA%3D%3D&amp;sub.info=https%3A%2F%2Ffmoviesz.to%2Fajax%2Fepisode%2Fsubtitles%2F3127&amp;autostart=true')
-
-
-print(r)
-
-soup = BeautifulSoup(r.content, 'html5lib')
-
-print(soup.prettify())
-
-#s = soup.find('iframe')
-videoTags = soup.findAll('iframe')
-print("Total", len(videoTags),"videos found")
-print(videoTags)"""
